@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>lei</title>
+  <title>Lei</title>
   
-  <subtitle>对知识贪婪 对生活知足</subtitle>
+  <subtitle>蹇磊的个人技术博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
