@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[将Excel文档转换为csv格式导入R]]></title>
     <url>%2F2018%2F09%2F11%2F%E5%B0%86Excel%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E4%B8%BAcsv%E6%A0%BC%E5%BC%8F%E5%AF%BC%E5%85%A5R%2F</url>
-    <content type="text"><![CDATA[1、新建一个Excel表格并另存为CSV(逗号分隔)格式文件；2、如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；3、将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &lt;- read.table("文件.csv", header=TRUE, row.names="第一列", sep=",")colClasses=c("") header=TRUE：第一行包含变量名。row.names：行名，指定一个或多个行标记符sep=”,”：读取逗号分隔的行内数据文件。1str(x) 显示对象结构。]]></content>
+    <content type="text"><![CDATA[&emsp;1. 新建一个Excel表格并另存为CSV(逗号分隔)格式文件；&emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &lt;- read.table("文件.csv", header=TRUE, row.names="第一列", sep=",")colClasses=c("") &emsp;&emsp;header=TRUE：第一行包含变量名。row.names：行名，指定一个或多个行标记符sep=”,”：读取逗号分隔的行内数据文件。1str(x) &emsp;&emsp;显示对象结构。]]></content>
       <categories>
         <category>R语言</category>
       </categories>
