@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-19T14:09:23.286Z</updated>
+  <updated>2018-09-11T16:58:18.357Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>将Excel文档转换为csv格式导入R</title>
+    <link href="http://yoursite.com/2018/09/11/%E5%B0%86Excel%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E4%B8%BAcsv%E6%A0%BC%E5%BC%8F%E5%AF%BC%E5%85%A5R/"/>
+    <id>http://yoursite.com/2018/09/11/将Excel文档转换为csv格式导入R/</id>
+    <published>2018-09-11T15:41:17.000Z</published>
+    <updated>2018-09-11T16:58:18.357Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、新建一个Excel表格并另存为CSV(逗号分隔)格式文件；<br>2、如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；<br>3、将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &lt;- read.table(<span class="string">"文件.csv"</span>, header=TRUE, row.names=<span class="string">"第一列"</span>, sep=<span class="string">","</span>)</span><br><span class="line">colClasses=c(<span class="string">""</span>)</span><br></pre></td></tr></table></figure></p><p>header=TRUE：第一行包含变量名。row.names：行名，指定一个或多个行标记符sep=”,”：读取逗号分隔的行内数据文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str(x)</span><br></pre></td></tr></table></figure></p><p>显示对象结构。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、新建一个Excel表格并另存为CSV(逗号分隔)格式文件；&lt;br&gt;2、如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&lt;br&gt;3、将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：&lt;br&gt;&lt;figure class
+      
+    
+    </summary>
+    
+      <category term="R语言" scheme="http://yoursite.com/categories/R%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="R" scheme="http://yoursite.com/tags/R/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建 Hexo+Github+域名 个人博客</title>
