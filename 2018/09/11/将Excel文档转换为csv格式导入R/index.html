@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="&amp;emsp;1. 新建一个Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- r">
+<meta name="description" content="&amp;emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- read">
 <meta name="keywords" content="R">
 <meta property="og:type" content="article">
 <meta property="og:title" content="将Excel文档转换为csv格式导入R">
 <meta property="og:url" content="http://yoursite.com/2018/09/11/将Excel文档转换为csv格式导入R/index.html">
 <meta property="og:site_name" content="Lei">
-<meta property="og:description" content="&amp;emsp;1. 新建一个Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- read.table(&quot;文件.csv&quot;, header=TRUE, row.names=&quot;第一列&quot;, sep=&quot;,">
+<meta property="og:description" content="&amp;emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- read.table(&quot;文件.csv&quot;, header=TRUE, row.names=&quot;第一列&quot;, sep=&quot;,&quot;)c">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-11T17:47:21.800Z">
+<meta property="og:updated_time" content="2018-09-12T02:32:12.270Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将Excel文档转换为csv格式导入R">
-<meta name="twitter:description" content="&amp;emsp;1. 新建一个Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- read.table(&quot;文件.csv&quot;, header=TRUE, row.names=&quot;第一列&quot;, sep=&quot;,">
+<meta name="twitter:description" content="&amp;emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- read.table(&quot;文件.csv&quot;, header=TRUE, row.names=&quot;第一列&quot;, sep=&quot;,&quot;)c">
 
 
 
@@ -409,7 +409,7 @@
       
 
       
-        <h2 id="emsp-1-新建一个Excel表格并另存为CSV-逗号分隔-格式文件；"><a href="#emsp-1-新建一个Excel表格并另存为CSV-逗号分隔-格式文件；" class="headerlink" title="&emsp;1. 新建一个Excel表格并另存为CSV(逗号分隔)格式文件；"></a>&emsp;1. 新建一个Excel表格并另存为CSV(逗号分隔)格式文件；</h2><h2 id="emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"><a href="#emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；" class="headerlink" title="&emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"></a>&emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；</h2><h2 id="emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行："><a href="#emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行：" class="headerlink" title="&emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行："></a>&emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &lt;- read.table(<span class="string">"文件.csv"</span>, header=TRUE, row.names=<span class="string">"第一列"</span>, sep=<span class="string">","</span>)</span><br><span class="line">colClasses=c(<span class="string">""</span>)</span><br></pre></td></tr></table></figure>
+        <h2 id="emsp-1-将Excel表格并另存为CSV-逗号分隔-格式文件；"><a href="#emsp-1-将Excel表格并另存为CSV-逗号分隔-格式文件；" class="headerlink" title="&emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；"></a>&emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；</h2><h2 id="emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"><a href="#emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；" class="headerlink" title="&emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"></a>&emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；</h2><h2 id="emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行："><a href="#emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行：" class="headerlink" title="&emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行："></a>&emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &lt;- read.table(<span class="string">"文件.csv"</span>, header=TRUE, row.names=<span class="string">"第一列"</span>, sep=<span class="string">","</span>)</span><br><span class="line">colClasses=c(<span class="string">""</span>)</span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;header=TRUE：第一行包含变量名。row.names：行名，指定一个或多个行标记符sep=”,”：读取逗号分隔的行内数据文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str(x)</span><br></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;显示对象结构。</p>
 
@@ -628,7 +628,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#emsp-1-新建一个Excel表格并另存为CSV-逗号分隔-格式文件；"><span class="nav-number">1.</span> <span class="nav-text"> 1. 新建一个Excel表格并另存为CSV(逗号分隔)格式文件；</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"><span class="nav-number">2.</span> <span class="nav-text"> 2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行："><span class="nav-number">3.</span> <span class="nav-text"> 3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#emsp-1-将Excel表格并另存为CSV-逗号分隔-格式文件；"><span class="nav-number">1.</span> <span class="nav-text"> 1. 将Excel表格并另存为CSV(逗号分隔)格式文件；</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"><span class="nav-number">2.</span> <span class="nav-text"> 2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行："><span class="nav-number">3.</span> <span class="nav-text"> 3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：</span></a></li></ol></div>
             
 
           </div>
