@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-27T07:21:49.222Z</updated>
+  <updated>2019-03-27T10:47:12.535Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ggplot����ͼ����KEGG���򸻼�ͨ·</title>
+    <link href="http://yoursite.com/2019/03/27/ggplot%E6%B0%94%E6%B3%A1%E5%9B%BE%E5%88%86%E6%9E%90KEGG%E5%9F%BA%E5%9B%A0%E5%AF%8C%E9%9B%86%E9%80%9A%E8%B7%AF/"/>
+    <id>http://yoursite.com/2019/03/27/ggplot气泡图分析KEGG基因富集通路/</id>
+    <published>2019-03-27T10:21:34.000Z</published>
+    <updated>2019-03-27T10:47:12.535Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="emsp-1-�������ݣ�����KEGGͨ·����ͨ·���򸻼�����Pֵ�͸���������csv��ʽ�l���"><a href="#emsp-1-�������ݣ�����KEGGͨ·����ͨ·���򸻼�����Pֵ�͸���������csv��ʽ�l���" class="headerlink" title="&emsp;1. �������ݣ�����KEGGͨ·����ͨ·���򸻼�����Pֵ�͸���������csv��ʽ�ļ���"></a>&emsp;1. �������ݣ�����KEGGͨ·����ͨ·���򸻼�����Pֵ�͸���������csv��ʽ�ļ���</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &lt;- read.csv(<span class="string">"���csv�ļ�.csv"</span>)<span class="comment">#����csv��ʽ����Ϊx</span></span><br><span class="line">x<span class="comment">#��ʾ����</span></span><br></pre></td></tr></table></figure><p>���ǵ����ݳ����������ģ�<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">                                   Term GeneNumber      pValue RichFactor</span><br><span class="line">1                           Spliceosome         12 0.004143058   2.637514</span><br><span class="line">2                 Arginine biosynthesis          3 0.042939696   4.351899</span><br><span class="line">3   Antigen processing and presentation          6 0.051676443   2.417722</span><br><span class="line">4                mTOR signaling pathway         10 0.055317720   1.896252</span><br><span class="line">5                cAMP signaling pathway         11 0.109859128   1.603715</span><br><span class="line">6                 p53 signaling pathway          5 0.110785204   2.102367</span><br><span class="line">7                   MicroRNAs <span class="keyword">in</span> cancer          9 0.116145959   1.673807</span><br><span class="line">8                MAPK signaling pathway         13 0.132300704   1.484900</span><br><span class="line">9  Toll-like receptor signaling pathway          5 0.280225219   1.480238</span><br><span class="line">10                            Apoptosis          5 0.553767557   1.043621</span><br></pre></td></tr></table></figure></p><h2 id="emsp-2-����ggplot2����������ͼ"><a href="#emsp-2-����ggplot2����������ͼ" class="headerlink" title="&emsp;2. ����ggplot2����������ͼ"></a>&emsp;2. ����ggplot2����������ͼ</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">library(ggplot2)</span><br><span class="line">y &lt;- ggplot(x, aes(x=RichFactor, y=Term,  size=GeneNumber, color=-1*log10(pValue))) + geom_point() + scale_colour_gradient(low=<span class="string">"green"</span>,high=<span class="string">"red"</span>) + labs(color=expression(-<span class="built_in">log</span>[10](pValue)),size=<span class="string">"Gene number"</span>, x=<span class="string">"Rich factor"</span>,y=<span class="string">"Pathway name"</span>,title=<span class="string">"Pathway enrichment"</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;emsp-1-�������ݣ�����KEGGͨ·����ͨ·���򸻼�����Pֵ�͸���������csv��ʽ�l���&quot;&gt;&lt;a href=&quot;#emsp-1-�������ݣ�����KEGGͨ·����ͨ·���򸻼�����Pֵ�͸��������
+      
+    
+    </summary>
+    
+      <category term="R����" scheme="http://yoursite.com/categories/R%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+    
+    
+      <category term="R" scheme="http://yoursite.com/tags/R/"/>
+    
+  </entry>
   
   <entry>
     <title>将Excel文档转换为CSV格式导入R以及R数据框导出为CSV</title>
