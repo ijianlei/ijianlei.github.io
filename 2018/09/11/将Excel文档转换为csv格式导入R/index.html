@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Lei">
 <meta property="og:description" content="&amp;emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- read.table(&quot;文件名.csv&quot;, header=TRUE, row.names=&quot;第一列&quot;, sep=&quot;,&quot;)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-12T06:21:18.144Z">
+<meta property="og:updated_time" content="2019-03-27T07:21:49.222Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将Excel文档转换为CSV格式导入R以及R数据框导出为CSV">
 <meta name="twitter:description" content="&amp;emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；&amp;emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；&amp;emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：12x &amp;lt;- read.table(&quot;文件名.csv&quot;, header=TRUE, row.names=&quot;第一列&quot;, sep=&quot;,&quot;)">
@@ -410,7 +410,7 @@
 
       
         <h2 id="emsp-1-将Excel表格并另存为CSV-逗号分隔-格式文件；"><a href="#emsp-1-将Excel表格并另存为CSV-逗号分隔-格式文件；" class="headerlink" title="&emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；"></a>&emsp;1. 将Excel表格并另存为CSV(逗号分隔)格式文件；</h2><h2 id="emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"><a href="#emsp-2-如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；" class="headerlink" title="&emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；"></a>&emsp;2. 如有引号，用记事本打开CSV，确认文本中不含有中文符号，文本编码最好为ANSI格式；</h2><h2 id="emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行："><a href="#emsp-3-将CSV放入R目前工作目录（getwd-显示当前工作目录）后，运行：" class="headerlink" title="&emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行："></a>&emsp;3. 将CSV放入R目前工作目录（getwd()显示当前工作目录）后，运行：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &lt;- read.table(<span class="string">"文件名.csv"</span>, header=TRUE, row.names=<span class="string">"第一列"</span>, sep=<span class="string">","</span>)</span><br><span class="line">colClasses=c(<span class="string">""</span>)</span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;header=TRUE：第一行包含变量名。row.names：行名，指定一个或多个行标记符sep=”,”：读取逗号分隔的行内数据文件。colClasses：对每一列都指定一个类（逻辑型、数值型、字符型、因子型等），如numeric 数值型变量、character 字符型向量，NULL则跳过该列。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str(x)</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;header=TRUE：第一行包含变量名。row.names：行名，指定一个或多个行标记符。sep=”,”：读取逗号分隔的行内数据文件。colClasses：对每一列都指定一个类（逻辑型、数值型、字符型、因子型等），如numeric 数值型变量、character 字符型向量，NULL则跳过该列。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str(x)</span><br></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;显示对象结构。</p>
 <h2 id="emsp-4-将数据框输出为-csv文件："><a href="#emsp-4-将数据框输出为-csv文件：" class="headerlink" title="&emsp;4. 将数据框输出为.csv文件："></a>&emsp;4. 将数据框输出为.csv文件：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">write.table(数据框, <span class="string">"文件名.csv"</span>, quote=FALSE, sep=<span class="string">","</span>, row.names=FALSE, col.names=TRUE)</span><br></pre></td></tr></table></figure>
       
@@ -649,7 +649,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
